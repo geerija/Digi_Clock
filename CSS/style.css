@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: radial-gradient(circle, #ff6b6b, #faa2c1, #74c0fc);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: #343a40;
+  font-weight: bold;
+}
+.clock {
+  text-align: center;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 2rem;
+  border: 10px solid #343a40;
+  border-radius: 15px;
+  font-size: 10rem;
+  font-family: "Roboto Mono", monospace;
+  width: 80rem;
+  /* overflow: hidden; */
+}
+/*media queries*/
+@media (max-width: 1556px) {
+  .container {
+    font-size: 4rem;
+  }
+  .clock {
+    width: 70rem;
+  }
+}
+@media (max-width: 1348px) {
+  .container {
+    font-size: 3rem;
+  }
+  .clock {
+    font-size: 6rem;
+    width: 60rem;
+  }
+}
+@media (max-width: 1164px) {
+  .container {
+    font-size: 3rem;
+  }
+  .clock {
+    font-size: 5rem;
+    width: 50rem;
+  }
+}
+@media (max-width: 964px) {
+  .container {
+    font-size: 3rem;
+  }
+  .clock {
+    font-size: 4rem;
+    width: 40rem;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    font-size: 1.5rem;
+  }
+  .clock {
+    font-size: 3rem;
+    width: 30rem;
+  }
+}
+@media (max-width: 590px) {
+  .container {
+    font-size: 1rem;
+  }
+  .clock {
+    font-size: 2rem;
+    width: 20rem;
+  }
+}
